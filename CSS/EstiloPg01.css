@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-/cabezera/
+
 .cabezera{
     background-color: #1B2838;
     width: 80%;
@@ -84,7 +84,8 @@
 
 }
 
-/datos freek/
+
+
 .seccion_2{
     background-color: #843B9D;
     width: 80%;
@@ -201,7 +202,8 @@
     margin: 15px;
 }
 
-/retos nostalgia/
+
+
 .titulo_retos {
     width: 80%;
     background-color: #843B9D;
@@ -215,7 +217,8 @@
 }
 
 
-/tecnologia de hoy en dia/
+
+
 
 .seccion_4 {
     background-color: #843B9D;
@@ -302,7 +305,8 @@
     width: 100%;
 }
 
-/redes sociales/
+
+
 .footer {
     background-color: #1B2838;
     text-align: center;         
