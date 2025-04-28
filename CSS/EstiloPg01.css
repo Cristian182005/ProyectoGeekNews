@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    background-color: #1B2838;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/cabezera/
+.cabezera{
+    background-color: #1B2838;
+    width: 80%;
+    height: 50px;
+}
+
+.cabezera_2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cabezera_img{
+    object-fit: cover;
+    height: 90%;
+    margin-right: 10px;
+}
+
+.navegacion{
+    background-color: #843B9D;
+    width: 80%;
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+}
+
+.presentacion{
+    color: black;
+    width: 80%;
+    padding: 1% 0;
+}
+.baneer{
+    background-image: url(../imagenes/seccion1.png);
+    background-position: center;
+    width: 80%;
+    height: 250px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.baneer.p{
+    font-size: 75px;
+
+}
+
+/datos freek/
+.seccion_2{
+    background-color: #843B9D;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+
+
+}
+
+.bloque_izquierdo{
+    width: 60%;
+    height: 100%;
+    background-color: #843B9D;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.izq_titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.izq_titulo h2{
+    font-size: 28px;
+
+}
+
+.izq_titulo h3{
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.izq_img{
+    width: 100%;
+    margin: 30px 0;
+
+}
+
+.izq_img img{
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.izq_parrafo{
+    font-size: 18px;
+
+
+}
+
+.bloque_derecho{
+    width: 40%;
+    background-color: #843B9D;
+    height: 100%;
+    padding: 0 3%;
+
+
+}
+
+.der_titulo{
+    text-align: center;
+
+}
+
+.der_titulo h3{
+    font-size: 20px;
+}
+
+.der_noticias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 30px 0;
+
+}
+
+.noticias_img{
+    width: 50%;
+
+}
+
+.noticias_img img{
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.noticias_texto{
+    width: 50%;
+    margin: 0 10px;
+}
+
+.noticias_texto h4{
+    font-size: 17px;
+    text-align: start;
+    margin: 15px;
+}
+
+.noticias_texto p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px;
+}
+
+/retos nostalgia/
+.titulo_retos {
+    width: 80%;
+    background-color: #843B9D;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo_retos h2 {
+    color: black;
+    font-size: 28px;
+}
+
+
+/tecnologia de hoy en dia/
+
+.seccion_4 {
+    background-color: #843B9D;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.titulo_4 {
+    background-color: #843B9D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor_s4 {
+    background-color: #843B9D;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: flex-start; 
+}
+
+.textos_s4 {
+    background-color: #843B9D;
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer_s4 {
+    background-color: #843B9D;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.encabezado_4 {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.img_4 {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; 
+}
+
+.img_4 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.textos_s4 p {
+    margin: 10px 0;
+    text-align: justify;
+    width: 100%;
+}
+
+/redes sociales/
+.footer {
+    background-color: #1B2838;
+    text-align: center;         
+}
+
+.footer a {
+    color: white;               
+    text-decoration: none;     
+    margin: 0 15px;        
+    font-family: Arial, sans-serif;
+}
