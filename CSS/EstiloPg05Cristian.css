@@ -12,9 +12,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('http://127.0.0.1:5500/freek.yallico%20img/logo.png');
-    background-size: cover;
     background-position: center;
-    height: 250vh;
+    height: 400vh;
     display: flex;
 }
 
@@ -85,19 +84,109 @@ nav {
     font-style: normal;
 }
 
-h1 {
+/*SECCION 01*/
+.section01 {
+    padding: 5px;
+}
+
+.titulo01 {
     padding: 1dvh;
     height: 80px;
     width: 100%;
-    justify-content: start;
-    justify-items: start;
+    justify-content: center;
+    justify-items: center;
     display: flex;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: underline;
 
     /*Importado*/
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.contenedor02 {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.img-procesador {
+    margin-bottom: 20px;
+}
+
+.img-procesador img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text02 {
+    text-align: justify;
+    width: 600px;
+    color: white;
+    font-size: 13px;
+
+    /*Importado*/
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*SECCION 02*/
+.section02 {
+    padding: 20px;
+}
+
+.titulo02 {
+    padding: 1dvb;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+    /*Importado*/
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor03 {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+.img-grafica {
+    margin-bottom: 10px;
+}
+
+.img-grafica img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text03 {
+    text-align: justify;
+    width: 300px;
+    color: white;
+    font-size: 13px;
+
+    /*Importado*/
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subtitulo01{
+    color: yellow;
 }
