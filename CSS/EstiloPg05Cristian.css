@@ -26,7 +26,20 @@ body {
     text-align: center;
 }
 
-header {
+/*KeyFrames*/
+@keyframes entradatexto {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulog {
     padding: 1px;
     width: 100%;
     height: 80px;
@@ -35,6 +48,7 @@ header {
     display: flex;
     font-size: 3rem;
     color: white;
+    animation: entradatexto 1.0s forwards;
 
     /*Importado*/
     font-family: "Special Gothic Expanded One", sans-serif;
@@ -49,12 +63,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    animation: entradatexto 1.5s forwards;
 }
 
 .nav-menu {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+    animation: entradatexto 1.5s forwards;
 
     /*Importado*/
     font-family: "Special Gothic Expanded One", sans-serif;
@@ -63,7 +79,16 @@ nav {
 }
 
 .nav-menu:hover {
+    color: rgb(229, 229, 8);
+}
+
+.nav-menu i {
+    transition: 0.3s ease;
+}
+
+.nav-menu:hover i {
     color: rgb(229, 229, 86);
+    transform: rotate(20deg);
 }
 
 .presentacion {
@@ -72,6 +97,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.7);
     align-items: center;
     align-content: center;
+    animation: entradatexto 1.5s forwards;
 }
 
 .text01 {
@@ -86,7 +112,7 @@ nav {
 
 /*SECCION 01*/
 .section01 {
-    padding: 5px;
+    padding: 15px;
 }
 
 .titulo01 {
@@ -113,14 +139,20 @@ nav {
 }
 
 .img-procesador {
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
 .img-procesador img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.img-procesador img:hover {
+    transform: scale(1.1);
 }
 
 .text02 {
@@ -161,18 +193,28 @@ nav {
     display: flex;
     justify-content: center;
     gap: 80px;
-    
+
 }
 
 .img-grafica {
-    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .img-grafica img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     display: block;
+    transition: tranform 0.3s ease;
+}
+
+.img-grafica img:hover {
+    transform: scale(1.1);
+}
+
+.subtitulo01 {
+    color: yellow;
 }
 
 .text03 {
@@ -187,6 +229,65 @@ nav {
     font-style: normal;
 }
 
-.subtitulo01{
+
+
+/*SECCION 03*/
+.section03 {
+    padding: 20px;
+}
+
+.titulo03 {
+    padding: 1dvb;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+    /*Importado*/
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor04 {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.subtitulo02 {
     color: yellow;
+}
+
+.text04 {
+    text-align: justify;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+
+    /*Importado*/
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.img-placamadre {
+    width: 100%;
+    max-width: 50%;
+    /*margin-bottom: 20px;*/
+}
+
+.img-placamadre img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: tranform 0.3s ease;
+}
+
+.img-placamadre img:hover {
+    transform: scale(1.1);
 }
