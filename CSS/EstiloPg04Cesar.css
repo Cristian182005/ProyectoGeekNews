@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f1b2a;
+  color: white;
+}
+
+header {
+  background-color: #3c1361;
+  padding: 10px;
+  text-align: left;
+}
+
+.inicio-btn {
+  background-color: #9c27b0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.intro {
+  padding: 30px;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #b832e8;
+}
+
+.intro img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.noticias {
+  padding: 30px;
+}
+
+.noticias h2 {
+  color: #b832e8;
+}
+
+.noticia {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.noticia img {
+  width: 120px;
+  border-radius: 6px;
+}
+
+.noticia a {
+  color: #b38aff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.paginacion {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.paginacion button, .paginacion span {
+  background-color: #253447;
+  color: white;
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paginacion .activo {
+  background-color: #00bcd4;
+}
+
+.relacionados {
+  padding: 30px;
+}
+
+.relacionados h2 {
+  color: #b832e8;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid article {
+  background-color: #1e2a38;
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.grid article img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.grid h3 {
+  color: #e1b6ff;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #101822;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer .temas, footer .social {
+  margin-bottom: 20px;
+}
+
+footer .temas p {
+  color: #b38aff;
+}
+
+footer .iconos img {
+  width: 30px;
+  margin: 0 10px;
+}
