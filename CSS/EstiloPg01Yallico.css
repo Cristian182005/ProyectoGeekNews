@@ -61,7 +61,7 @@
 }
 
 .presentacion{
-    color: black;
+    color: #ffffff;
     width: 80%;
     padding: 1% 0;
 }
@@ -86,120 +86,121 @@
 
 
 
-.seccion_2{
+/* seccion 2 y 3 */
+.seccion_2 {
     background-color: #843B9D;
     width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     padding: 1% 0;
-
-
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 0;
 }
 
-.bloque_izquierdo{
-    width: 60%;
-    height: 100%;
+.bloque_izquierdo {
     background-color: #843B9D;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
     padding: 0 3%;
+    gap: 20px;
 }
 
-.izq_titulo{
+.izq_titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.izq_titulo h2{
+.izq_titulo h2 {
     font-size: 28px;
-
+    margin: 0;
 }
 
-.izq_titulo h3{
+.izq_titulo h3 {
     font-size: 18px;
     margin-top: 10px;
     color: black;
-
 }
 
-.izq_img{
+.izq_img {
     width: 100%;
-    margin: 30px 0;
-
 }
 
-.izq_img img{
-    object-fit: cover;
+.izq_img img {
     width: 100%;
-
+    height: auto;
+    display: block;
 }
 
-.izq_parrafo{
+.izq_parrafo {
     font-size: 18px;
-
-
+    margin: 0;
 }
 
-.bloque_derecho{
-    width: 40%;
+.bloque_derecho {
     background-color: #843B9D;
-    height: 100%;
     padding: 0 3%;
-
-
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
 }
 
-.der_titulo{
-    text-align: center;
-
-}
-
-.der_titulo h3{
+.der_titulo h3 {
     font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
 
-.der_noticias{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.der_noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     align-items: start;
-    margin: 30px 0;
-
 }
 
-.noticias_img{
-    width: 50%;
-
-}
-
-.noticias_img img{
-    object-fit: cover;
+.noticias_img {
     width: 100%;
-
 }
 
-.noticias_texto{
-    width: 50%;
-    margin: 0 10px;
+.noticias_img img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.noticias_texto h4{
+.noticias_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.noticias_texto h4 {
     font-size: 17px;
-    text-align: start;
-    margin: 15px;
+    margin: 0 0 10px 0;
 }
 
-.noticias_texto p{
+.noticias_texto p {
     font-size: 15px;
     text-align: justify;
-    margin: 15px;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .seccion_2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .der_noticias {
+        grid-template-columns: 1fr;
+    }
+    
+    .noticias_texto h4,
+    .noticias_texto p {
+        margin: 10px 0;
+    }
 }
 
 
@@ -218,55 +219,44 @@
 
 
 
+/* seccion 4 */
 .seccion_4 {
     background-color: #843B9D;
     width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     padding: 20px 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
 }
 
 .titulo_4 {
     background-color: #843B9D;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .contenedor_s4 {
     background-color: #843B9D;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 20px;
-    align-items: flex-start; 
 }
 
 .textos_s4 {
     background-color: #843B9D;
-    width: 33%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 15px;
     padding: 20px;
     text-align: center;
 }
 
 .footer_s4 {
     background-color: #843B9D;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: black;
@@ -275,35 +265,56 @@
 
 .encabezado_4 {
     font-size: 14px;
-    margin: 10px 0;
     text-align: center;
-    width: 100%;
 }
 
 .img_4 {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     width: 100%;
-    height: 200px; 
-    overflow: hidden; 
+    height: 200px;
+    overflow: hidden;
 }
 
 .img_4 img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
 .textos_s4 p {
-    margin: 10px 0;
     text-align: justify;
-    width: 100%;
 }
 
 
+@media (max-width: 992px) {
+    .contenedor_s4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .textos_s4:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor_s4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .textos_s4:last-child {
+        grid-column: span 1;
+    }
+    
+    .seccion_4 {
+        width: 90%;
+    }
+}
+
+
+
+/* footer */
 .footer {
     background-color: #1B2838;
     text-align: center;         
@@ -314,4 +325,198 @@
     text-decoration: none;     
     margin: 0 15px;        
     font-family: Arial, sans-serif;
+}
+
+
+
+
+/* Encuesta */
+.encuesta-section {
+  background-color: #1B2838;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.encuesta-section h2 {
+  color: #843B9D;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.encuesta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pregunta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pregunta label {
+  font-weight: bold;
+}
+
+.pregunta input[type="text"],
+.pregunta input[type="email"],
+.pregunta input[type="password"],
+.pregunta select {
+  padding: 8px;
+  border: 1px solid #843B9D;
+  border-radius: 4px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.opciones {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.aceptar {
+  margin-top: 10px;
+}
+
+.btn-enviar {
+  background-color: #843B9D;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-enviar:hover {
+  background-color: #9a4fb3;
+}
+
+
+/* Animaciones*/
+@keyframes entradatexto {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cabezera {
+    animation: entradatexto 1.0s forwards;
+}
+
+.navegacion {
+    animation: entradatexto 1.5s forwards;
+}
+
+.navegacion a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navegacion a:hover {
+    color: rgb(229, 229, 8);
+    transform: translateY(-3px);
+}
+
+.navegacion a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 15px;
+    left: 50%;
+    background-color: rgb(229, 229, 8);
+    transition: all 0.3s ease;
+}
+
+.navegacion a:hover::after {
+    width: 60%;
+    left: 20%;
+}
+
+
+.baneer {
+    animation: entradatexto 1.5s forwards;
+    transition: all 0.5s ease;
+}
+
+.baneer:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+
+.izq_img img, 
+.noticias_img img, 
+.img_4 img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.izq_img img:hover, 
+.noticias_img img:hover, 
+.img_4 img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+.seccion_2, 
+.seccion_4, 
+.titulo_retos {
+    animation: entradatexto 1.2s forwards;
+}
+
+
+
+.textos_s4 {
+    transition: all 0.3s ease;
+}
+
+.textos_s4:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+
+.encuesta-section {
+    animation: entradatexto 1.3s forwards;
+}
+
+.btn-enviar {
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 5px 10px rgba(132, 59, 157, 0.4);
+}
+
+
+
+.footer {
+    animation: entradatexto 1.4s forwards;
+}
+
+.footer a {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer a:hover {
+    color: #843B9D;
+    transform: translateY(-3px);
 }
