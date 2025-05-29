@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cómics y Manga</title>
-  <link rel="stylesheet" href="CSS/EstiloPg04Cesar.css">
+  <link rel="stylesheet" href="CSS/EstiloPg04Cesar.css" />
+  <link rel="shortcut icon" href="freek.cristian img/computer.png">
 </head>
 <body>
-
   <header>
-    <button class="inicio-btn">Inicio</button>
+    <nav class="navbar">
+      <h1 class="logo">Cómics&Manga</h1>
+      <ul class="nav-links">
+        <li><a href="yallico.html">Inicio</a></li>
+        <li><a href="jair.html">Videojuegos</a></li>
+        <li><a href="marvin.html">Anime</a></li>
+        <li><a href="Cesar.html">Comics&Mangas</a></li>
+        <li><a href="Cristian.html">PC</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section class="intro">
-      <h1>Cómics y Manga</h1>
-      <p>Si lo tuyo son las historias que enganchan desde la primera página, estás en el lugar correcto. 
-        ¡Ponte cómodo y explora tus mundos favoritos!</p>
-      <img src="freek.cesar img/banner.jpg" alt="">
+      <h2>Bienvenido</h2>
+      <p>¡Explora tus mundos favoritos de cómics y manga!</p>
+      <img src="freek.cesar img/banner00.webp" alt="Portada de comics" />
     </section>
 
     <section class="noticias">
       <h2>Últimas Noticias</h2>
-      <div class="noticia">
-        <img src="freek.cesar img/news/Iron_Man_Ackerman_destacada-218x150.jpg" alt="">
-        <div>
-          <a href="#">Iron Man #1, de Spencer Ackerman y Julius Ohta</a>
-          <p><strong>Pablo Jiménez</strong> - 23 abril, 2025</p>
-          <p>La colección de Iron Man vuelve a las librerías con este relanzamiento que aterriza en España...</p>
-        </div>
-      </div>
-      <!-- Agrega más noticias aquí -->
-    </section>
-
-    <div class="paginacion">
-      <button>1</button>
-      <button class="activo">2</button>
-      <button>3</button>
-      <span>...</span>
-      <button>120</button>
-      <button>&gt;</button>
-    </div>
-
-    <section class="relacionados">
-      <h2>Artículos Relacionados</h2>
-      <div class="grid">
+      <div class="grid-noticias">
         <article>
-          <img src="freek.cesar img/related/dragonnews.png" alt="">
-          <h3>ZN25 – Dragon Ball, de TORIYAMA Akira</h3>
-          <p>Dragon Ball, obra del maestro TORIYAMA Akira, ha sido un fenómeno global que ha vivido su 25 aniversario.</p>
+          <img src="freek.cesar img/news/Iron_Man_Ackerman_destacada-218x150.jpg" alt="Iron Man" />
+          <div>
+            <h3>Iron Man #1</h3>
+            <p>Spencer Ackerman y Julius Ohta reviven la saga...</p>
+          </div>
         </article>
-        <!-- Más artículos -->
+        <article>
+          <img src="freek.cesar img/news/cruzando-el-bosque_dest-218x150.jpg" alt="Bosque" />
+          <div>
+            <h3>Cruzando el bosque</h3>
+            <p>E.M. Carroll nos sorprende con una reedición única...</p>
+          </div>
+        </article>
+        <article>
+          <img src="freek.cesar img/news/Helen-de-Wyndhorn-destacada-con-218x150.jpg" alt="Helen" />
+          <div>
+            <h3>Helen de Wyndhorn</h3>
+            <p>Un nuevo bombazo de Tom King y Supergirl...</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <footer>
-      <div class="temas">
-        <h3>Temas de interés:</h3>
-        <p>Marvel · Dc · Akira Toriyama · Solo Leveling · UCM · One Shot · Relanzamientos · Traducciones</p>
+    <section class="articulos">
+      <h2>Artículos Recomendados</h2>
+      <div class="flex-articulos">
+        <article>
+          <img src="freek.cesar img/related/dragonnews.png" alt="Dragon Ball" />
+          <h3>ZN25 – Dragon Ball</h3>
+          <p>25 años de aventuras con Goku y compañía.</p>
+        </article>
+        <article>
+          <img src="freek.cesar img/related/mangaconnews.png" alt="Manga 2024" />
+          <h3>Top Manga 2024</h3>
+          <p>Lo mejor del manga en lo que va del año.</p>
+        </article>
+        <article>
+          <img src="freek.cesar img/related/topnews.png" alt="Issho" />
+          <h3>MANGA ISSHO Nº1</h3>
+          <p>Un nuevo enfoque europeo al estilo japonés.</p>
+        </article>
       </div>
-      <div class="social">
-        <h3>Otros canales de comunicación...</h3>
-        <div class="iconos">
-          <img src="img/ig.png" alt="Instagram">
-          <img src="img/yt.png" alt="YouTube">
-          <img src="img/fb.png" alt="Facebook">
-          <img src="img/tk.png" alt="TikTok">
-        </div>
-      </div>
-    </footer>
-
+    </section>
   </main>
 
+  <footer>
+    <p>&copy; 2025 Cómics & Manga | Síguenos en redes</p>
+    <div class="redes">
+      <img src="fb.png" alt="Facebook" />
+      <img src="ig.png" alt="Instagram" />
+      <img src="yt.png" alt="YouTube" />
+    </div>
+  </footer>
 </body>
 </html>
