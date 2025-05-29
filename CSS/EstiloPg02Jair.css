@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1B2838;
+    color: white;
+    padding-top: 60px; 
+}
+
+
+
+header {
+    background: #843B9D;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#empresa {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+    transform: translateY(-2px);
+}
+
+/* SECCIONES 1*/
+.seccion {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #843B9D;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/* SECCIONES 2*/
+.grid-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.grid-imagenes img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.grid-imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/* SECCIONES 3*/
+.grid-articulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.articulo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.articulo:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* SECCIONES 4*/
+.temas {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.temas a {
+    background: #843B9D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.temas a:hover {
+    background: #9a4fb3;
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 768px) {
+    .grid-imagenes {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-imagenes img {
+        height: 220px;
+    }
+    
+    nav {
+        gap: 10px;
+    }
+}
