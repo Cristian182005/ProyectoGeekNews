@@ -5,8 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('http://127.0.0.1:5500/freek.yallico%20img/logo.png');
+    background-position: center;
+    display: flex;
+}
+
 .main{
-    background-color: #1B2838;
     width: 100%;
     height: 100%;
     display: flex;
@@ -17,7 +24,6 @@
 
 
 .cabezera{
-    background-color: #1B2838;
     width: 80%;
     height: 50px;
 }
@@ -29,7 +35,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
@@ -259,7 +265,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     margin-top: 20px;
 }
 
@@ -287,6 +293,10 @@
     text-align: justify;
 }
 
+.main p{
+    color: white;
+}
+
 
 @media (max-width: 992px) {
     .contenedor_s4 {
@@ -312,11 +322,8 @@
     }
 }
 
-
-
 /* footer */
 .footer {
-    background-color: #1B2838;
     text-align: center;         
 }
 
@@ -326,9 +333,6 @@
     margin: 0 15px;        
     font-family: Arial, sans-serif;
 }
-
-
-
 
 /* Encuesta */
 .encuesta-section {
@@ -519,4 +523,101 @@
 .footer a:hover {
     color: #843B9D;
     transform: translateY(-3px);
+}
+
+/* Boton login */
+.login-btn {
+    position: absolute;
+    right: 1%;
+    top: 15px;
+    padding: 8px 20px;
+    background-color: #6a3093; 
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.login-btn:hover {
+    background-color: #9a4fb3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+/*Modal de advertencia*/
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #f44336; 
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 20px; 
+  transform: translateX(-50%);
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, top 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  top: 40px; 
+}
+
+.toast-exito {
+  background-color: #4CAF50; 
+}
+
+/*Generador de Poder Geek*/
+
+.generador-poder {
+    background-color: #1B2838;
+    color: #6a3093;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#pantalla {
+    min-height: 60px;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(151, 140, 211, 0.76);
+    border-radius: 5px;
+}
+
+.geek-input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 80%;
+    max-width: 300px;
+    background: #2c3e50;
+    border: 2px solid #843B9D;
+    color: white;
+    border-radius: 4px;
+}
+
+.geek-btn {
+    background: #843B9D;  
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.geek-btn:hover {
+    background: #9a4fb3; /
 }

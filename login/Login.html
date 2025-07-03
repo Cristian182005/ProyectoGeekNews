@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css"> <script src="Login.js"></script>
+</head>
+<body>
+    <form id="loginForm" action="" method="post">
+        <section class="login-container">
+            <h1>Iniciar Sesión</h1>
+
+            <div class="form-campo">
+                <label for="correoLogin">Correo Electrónico:</label>
+                <input type="email" id="correoLogin" name="correo" class="controlador" placeholder="Tu correo registrado" required aria-required="true"/>
+            </div>
+
+            <div class="form-campo">
+                <label for="passwordLogin">Contraseña:</label>
+                <input type="password" id="passwordLogin" name="password" class="controlador" placeholder="Tu contraseña" required aria-required="true"/>
+            </div>
+
+            <div class="form-action">
+                <a href="Registrarse.html">¿No tienes cuenta? Regístrate aquí</a>
+                <button type="submit" class="submit-button">Iniciar Sesión</button>
+            </div>
+        </section>
+    </form>
+</body>
+</html>

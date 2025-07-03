@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="Registro.css"> <script src="Registrando.js"></script>
+</head>
+<body>
+    <form action="" method="post">
+        <section class="registro-container">
+            <h1>Formulario de registro</h1>
+            <div class="form-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="controlador" placeholder="Tu nombre completo" required aria-required="true"/>
+            </div>
+
+            <div class="form-campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" class="controlador" placeholder="ejemplo@dominio.com" required aria-required="true"/>
+            </div>
+
+            <div class="form-campo">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" class="controlador" placeholder="Mínimo 8 caracteres" required aria-required="true" minlength="8"/>
+            </div>
+
+            <div class="form-action">
+                <a href="Login.html">¿Ya tienes cuenta?</a>
+                <button type="submit" class="submit-button">Registrarse</button>
+            </div>
+        </section>
+    </form>
+</body>
+</html>

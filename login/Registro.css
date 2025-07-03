@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#843B9D;
+    font-family: Arial, sans-serif;
+}
+
+.registro-container{
+    background-color: #002d4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.registro-container h1{
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: azure;
+    text-align: left;
+    width: 100%;
+}
+
+.form-campo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-campo label{
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.controlador{
+    background: #135788;
+    padding: 10px;
+    border: 2px solid #aad0e3;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+.controlador::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-campo:focus{
+    outline: none;
+    border-color: #32a9fe;
+    box-shadow: 0 0 5px rgba(50, 169, 254, 0.5);
+}
+
+.form-action{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-action a{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #32a9fe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-action a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.submit-button{
+    width: 100%;
+    padding: 12px;
+    background-color: #0e6692;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.submit-button:hover{
+    background-color: #658896;
+}
+
+@media(max-width: 480px){
+    .registro-container{
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .registro-container h1{
+        font-size: 24px;
+    }
+
+    .controlador, .submit-button{
+        font-size: 15px;
+    }
+}
