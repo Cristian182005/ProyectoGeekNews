@@ -5,8 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('http://127.0.0.1:5500/freek.yallico%20img/logo.png');
+    background-position: center;
+    display: flex;
+}
+
 .main{
-    background-color: #1B2838;
     width: 100%;
     height: 100%;
     display: flex;
@@ -17,7 +24,6 @@
 
 
 .cabezera{
-    background-color: #1B2838;
     width: 80%;
     height: 50px;
 }
@@ -29,7 +35,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
@@ -259,7 +265,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     margin-top: 20px;
 }
 
@@ -287,6 +293,10 @@
     text-align: justify;
 }
 
+.main p{
+    color: white;
+}
+
 
 @media (max-width: 992px) {
     .contenedor_s4 {
@@ -312,11 +322,8 @@
     }
 }
 
-
-
 /* footer */
 .footer {
-    background-color: #1B2838;
     text-align: center;         
 }
 
@@ -326,9 +333,6 @@
     margin: 0 15px;        
     font-family: Arial, sans-serif;
 }
-
-
-
 
 /* Encuesta */
 .encuesta-section {
