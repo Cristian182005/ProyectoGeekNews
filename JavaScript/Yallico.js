@@ -9,7 +9,7 @@ titulo.addEventListener("click", () => {
   titulo.style.borderRadius = estiloTitulo ? "10px" : "";
 });
 
-// Otras imágenes destacadas (con animación al hacer clic)
+// imagenes destacadas 
 let imagenesIds = [
   "figuraDeku", "imgHolograma", "imgMartillo",
   "imgMetalSlug", "imgFF7", "imgZelda"
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toastExito = document.getElementById('toastExito');
 
   form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Siempre se bloquea primero
+    event.preventDefault(); 
 
     const nombre = document.getElementById('nombre');
     const email = document.getElementById('email');
@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       mostrarToast(toastExito);
 
-      // Simula envío (puedes reemplazar por un fetch o reset)
+    
       setTimeout(() => {
-        form.reset(); // Limpia el formulario
+        form.reset(); 
       }, 500);
     }
   });
@@ -181,3 +181,26 @@ btnGenerar.onclick = function() {
         `;
     }, 1000);
 };
+
+// Menú Hamburguesa
+const menuBtn = document.querySelector('.menu-btn');
+const navegacion = document.querySelector('.navegacion');
+
+menuBtn.addEventListener('click', () => {
+  navegacion.classList.toggle('active');
+  
+  // Cambia el icono cuando el menú está abierto
+  if(navegacion.classList.contains('active')) {
+    menuBtn.innerHTML = '×'; // Icono de cerrar (X)
+  } else {
+    menuBtn.innerHTML = '☰'; // Icono de hamburguesa
+  }
+});
+
+// Cerrar menú al hacer clic en un enlace (opcional pero recomendado)
+document.querySelectorAll('.navegacion a').forEach(link => {
+  link.addEventListener('click', () => {
+    navegacion.classList.remove('active');
+    menuBtn.innerHTML = '☰';
+  });
+});
