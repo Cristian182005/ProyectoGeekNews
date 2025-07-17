@@ -134,7 +134,7 @@ body {
 .baneer {
   background-image: url(https://render.fineartamerica.com/images/rendered/medium/print/6.5/8/break/images/artworkimages/medium/3/i-love-geek-pride-day-me.jpg);
   background-position: center;
-  background-size: cover;
+  
   width: 100%;
   max-width: 1200px;
   height: 15.625rem;
@@ -149,6 +149,8 @@ body {
   overflow: hidden;
   animation: entradatexto 1.5s forwards;
   transition: var(--transition);
+
+   background-repeat: no-repeat; 
 }
 
 .baneer:hover {
